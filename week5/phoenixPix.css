@@ -1,0 +1,26 @@
+div {
+    height: 200;
+    width: 250;
+}
+
+#phoenix1 {
+    align: left;
+    border-style: ridge;
+}
+
+#phoenix2 {
+    align: right;
+    border-style: dotted;
+}
+
+#phoenix3 {
+    align: left;
+    overflow: hidden;
+    border-style: inherit;
+}
+
+#phoenix4 {
+    align: right;
+    border: thick;
+    padding: 5px;
+}
