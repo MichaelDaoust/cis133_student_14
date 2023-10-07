@@ -1,0 +1,30 @@
+body {
+    font: serif;
+    font-size: 16px;
+}
+
+#address {
+    text-align: center;
+}
+
+h1 {
+    font: serif;
+    color: rgb(from color 33, 87, 51);
+    font-size: 36px;
+    background-color: rgb(from color 75, 133, 94);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: rgb(from color 33, 87, 51);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+#skillsList {
+    list-style-type: square;
+}
+
