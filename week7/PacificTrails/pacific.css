@@ -1,6 +1,7 @@
 body { 
     background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
     font-family: Verdana, Arial, sans-serif;
+    list-style-type: none;
 }
 
 header { 
@@ -18,13 +19,21 @@ nav {
 	padding-top: .5em;
 	padding-right: .5em;
 	padding-bottom: .5em;
-	text-align: center;
 }
 
-main { 
-    padding-left: 2em;
-    padding-right: 2em;
-    display: block; 
+li a:hover {
+    background-color: white;
+    color:greenyellow
+}
+
+main ul {
+    list-style-type: none;
+
+}
+
+main ul {
+    display:inline;
+    
 }
 
 footer { 
@@ -46,7 +55,8 @@ h1 {
 
 h2 { 
     color: #1976D2;
-    font-family: Georgia, serif; 
+    font-family: Georgia, serif;
+    list-style-type: none;
 }
 
 h3 { 
