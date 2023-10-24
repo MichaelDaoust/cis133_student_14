@@ -10,7 +10,6 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: left;
             word-wrap:inherit
-            text-overflow:break-word
         }
         
         h1 { 
@@ -26,20 +25,28 @@
             padding: 5px;
             color: rgb(163,82,0);
             font-style: italic;
+            
         }
-
+        
         h3 {
             color: rgb(163,82,0);
             font-weight: 500;
         
         }
         
-        .flowerPic { 
+        #flowerPic { 
             border: 5px ridge #A8C682;
             width: 250px;
             margin: 10px;
+            float: right;
         }
 
+        #lantana {
+            border: 5px ridge #A8C682;
+            width: 250px;
+            margin: 10px;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +55,7 @@
     <div style="margin: 5px;">
         <h2>Cypripedium reginae</h2>
 
-        <img class="flowerPic" src="./images/ladyslipper.jpg" alt="Lady Slipper" style="float:right"/>
+        <img id="flowerPic" src="./images/ladyslipper.jpg" alt="Lady Slipper"/>
 
         <h3>Overview</h3>
 
@@ -61,10 +68,10 @@
         <p>Despite producing a large amount of seeds per seed pod, it reproduces largely by vegetative reproduction.</p>
     </div>
 
-    <div>
+    <div style="clear: both">
         <h2>Lantana</h2>
 
-        <img  class="flowerPic" src="./images/lantana.jpg" alt="Yellow Lantana" style="float:right"/>
+        <img  id="lantana" src="./images/lantana.jpg" alt="Yellow Lantana"/>
 
         <h3>Overview</h3>
 
