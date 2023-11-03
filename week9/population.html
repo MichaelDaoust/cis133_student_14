@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style5.css">
     <title>Phoenix Metro Area Populations</title>
+    <style>
+        body{
+            background-image: linear-gradient(yellow, red);
+
+        }
+        
+        table {
+            align-content: right;
+            width: 40%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+        }
+        thead {
+            background-color: red;
+            text-align: center;
+            color: white;
+
+        }
+        tr:nth-child(odd) {
+            background-color: yellow;
+            
+        }
+        
+        tfoot {
+            background-color: beige;
+        }
+    </style>
 </head>
 <body>
     <h1>Phoenix Metropolitan Area</h1>
@@ -21,53 +49,82 @@
         area. The gross domestic product of the Phoenix Metropolitan Area was $255 billion in 2018, 16th largest amongst metro areas in the United States.
     </p>
 
-Cities and Suburbs Population
-City Name
-Population
-Founded
+    <table>
+        <thead>
+            <th colspan="3">Cities and Suburbs Population</th>
+            <tr>
+                <th>City Name</th>
+                <th>Population</th>
+                <th>Founded</th>
+            </tr>
+        </thead>
 
-Phoenix
-1,608,139
-1868
+        <tbody>
+            <tr>
+                <td>Phoenix</td>
+                <td>1,608,139</td>
+                <td>1868</td>
+            </tr>
+            <tr>
+                <td>Mesa</td>
+                <td>504,258</td>
+                <td>1878</td>
+            </tr>
+            <tr>
+                <td>Chandler</td>
+                <td>275,987</td>
+                <td>1912</td>
+            </tr>
+            <tr>
+                <td>Gilbert</td>
+                <td>267,918</td>
+                <td>1920</td>
+            </tr>
+            <tr>
+                <td>Glendale</td>
+                <td>248,325</td>
+                <td>1910</td>
+            </tr>
+            <tr>
+                <td>Scottsdale</td>
+                <td>241,361</td>
+                <td>1951</td>
+            </tr>
+            <tr>
+                <td>Peoria</td>
+                <td>190,985</td>
+                <td>1954</td>
+            </tr>
+            <tr>
+                <td>Tempe</td>
+                <td>180,587</td>
+                <td>1892</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Data from Wikipedia 06/2022</th>
 
-Mesa
-504,258
-1878
+        </tfoot>
+    </table>
+    
+    <table>
+        <tr align="center">
+            <td><img class="cityImg" src="./images/phoenix.jpg" alt="Picture of the city of Phoenix" title="Phoenix"></td>
+            <td><img class="cityImg" src="./images/mesa.jpg" alt="Picture of the city of Mesa"  title="Mesa"></td>
+            <td><img class="cityImg" src="./images/chandler.jpg" alt="Picture of the city of Chandler"  title="Chandler"></td>
+            <td><img class="cityImg" src="./images/gilbert.jpg" alt="Picture of the city of Gilbert"  title="Gilbert"></td>
+        </tr>
+        <tr>
+            <td><img class="cityImg" src="./images/glendale.jpg" alt="Picture of the city of Glendale"  title="Glendale"></td>
+            <td><img class="cityImg" src="./images/scottsdale.jpg" alt="Picture of the city of Scottdale"  title="Scottsdale"></td>
+            <td><img class="cityImg" src="./images/peoria.jpg" alt="Picture of the city of Peoria"  title="Peoria"></td>
+            <td><img class="cityImg" src="./images/tempe.jpg" alt="Picture of the city of Tempe"  title="Tempe"></td>
+        </tr>
 
-Chandler
-275,987
-1912
 
-Gilbert
-267,918
-1920
 
-Glendale
-248,325
-1910
 
-Scottsdale
-241,361
-1951
 
-Peoria
-190,985
-1954
-
-Tempe
-180,587
-1892
-
-Data from Wikipedia 06/2022
-            
-<img class="cityImg" src="./images/phoenix.jpg" alt="Picture of the city of Phoenix" title="Phoenix">
-<img class="cityImg" src="./images/mesa.jpg" alt="Picture of the city of Mesa"  title="Mesa">
-<img class="cityImg" src="./images/chandler.jpg" alt="Picture of the city of Chandler"  title="Chandler">
-<img class="cityImg" src="./images/gilbert.jpg" alt="Picture of the city of Gilbert"  title="Gilbert">
-<img class="cityImg" src="./images/glendale.jpg" alt="Picture of the city of Glendale"  title="Glendale">
-<img class="cityImg" src="./images/scottsdale.jpg" alt="Picture of the city of Scottdale"  title="Scottsdale">
-<img class="cityImg" src="./images/peoria.jpg" alt="Picture of the city of Peoria"  title="Peoria">
-<img class="cityImg" src="./images/tempe.jpg" alt="Picture of the city of Tempe"  title="Tempe">
-
+    </table>
 </body>
 </html>

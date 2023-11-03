@@ -7,11 +7,17 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15%, 85%;
+    grid-template-rows: 75px, 1fr, 50px;
+    grid-template-areas: hdr hdr, aside main, ftr ftr;
 }
 
 header, aside, main, footer {
     padding: 20px;
     text-align: center;
+    grid-area: hdr hdr, aside main, ftr ftr;
+
 }
 
 header {
@@ -28,6 +34,9 @@ aside > img {
 }
 
 main {
+    margin: 10px;
+    text-align: center;
+    float: right;
 }
 
 footer {
@@ -36,6 +45,13 @@ footer {
 }
 
 header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer > div{
+    margin: 0% 20% 0% 20%;
 }
 
 h1 {
