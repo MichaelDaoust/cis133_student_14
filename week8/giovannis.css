@@ -2,28 +2,41 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    display: grid; 
+    grid-template-columns: 15%, 85%; 
+    grid-template-rows: 75px, 1fr, 50px;
+    grid-template-areas: hdr hdr, aside main, ftr ftr;
+
 }
 
 header, aside, main, footer {
     padding: 20px;
     text-align: center;
+    grid-area: hdr hdr, aside main, ftr ftr;
 }
 
 header {
     color: white;
     background-color: rgb(33,87,51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 aside {
     background-color: rgb(75,133,94);
 }
 
-main {
+div {
+    margin: 0% 20% 0% 20%;
 }
-
 footer {
     color: white;
     background-color: rgb(53,112,72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
