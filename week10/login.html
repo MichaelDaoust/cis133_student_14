@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On week 10</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 300px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table order="1" border="1">
+            <tr>
+                <td colspan="2">
+                    <input 
+                        type="text" 
+                        name="userName" 
+                        id="uName" 
+                        tabindex="1" 
+                        placeholder="Username" 
+                        style="width: 200px;"
+                        maxlength="25"
+                        autofocus
+                        required
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="Pwd" 
+                        tabindex="2" 
+                        placeholder="Password" 
+                        style="width: 200px;"
+                        maxlength="25"
+                        required
+                    />    
+                </td>    
+            </tr>
+            <tr>
+                <td>
+                    <input 
+                        type="button" 
+                        name="ResetButtonid"
+                        id="reset"
+                        placeholder="Reset" 
+                        style="width: 100px;"
+                        tabindex="3"
+                        value="Reset"
+                
+                    />
+                </td>
+                <td> 
+                    <input
+                        type="Submit" 
+                        name="SubmitButtonid"
+                        id="submit"
+                        placeholder="Submit" 
+                        style="width: 100px;"
+                        tabindex="4"
+                        value="Submit"
+                    />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <!-- This is a comment: place name as same on all buttons -->
+            <input name="rbuttons" type="radio" id="rButton_1" /> Option 1 <br/>
+            <input name="rbuttons" type="radio" id="rButton_2" /> Option 2 <br/>
+            <input name="rbuttons" type="radio" id="rButton_3" /> Option 3 <br/>
+    </form>
+</body>
+</html>
