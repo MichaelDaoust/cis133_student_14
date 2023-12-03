@@ -63,4 +63,15 @@
         </amigoInfo>
     </ticket>
 </body>
+<script>
+    var name = window.prompt('Enter your first name');
+    var date = window.prompt('Enter the date you want to visit');
+    document.title = `${name}'s Ticket to Animal Amigos`;
+    document.getElementById('ownerName').innerText = name;
+    document.getElementById('visitDate').innerText = date;
+
+    function cancelTicket() {
+        window.close();
+    }
+</script>
 </html>
