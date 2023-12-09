@@ -7,20 +7,57 @@
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
+    <header>    
         <img src="./images/mikeLogo.png" class="logo">
     </header>    
         <div class ="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="location.html">Location</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="selection.html">Selection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
 </body>
-
+<main class="contactForm" align="center" style="margin-top: 6%;">
+    <h1><u style="color: gold;">Let Us Know How Bad We Did Below!</u></h1>
+    <div align="center">
+        <form action="submit.form" id="ContactUs" method="post" onsubmit="return ValidateForm(this);">
+            <script type="text/javascript">
+            function ValidateForm(frm) {
+            if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+            if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+            if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+            if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+            return true; }
+            </script>
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <tr> <td>
+            <label for="Name">Name*:</label>
+            </td> <td>
+            <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;background-color: white;" />
+            </td> </tr> <tr> <td>
+            <label for="PhoneNumber">Phone number:</label>
+            </td> <td>
+            <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;background-color: white;" />
+            </td> </tr> <tr> <td>
+            <label for="FromEmailAddress">Email address*:</label>
+            </td> <td>
+            <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;background-color: white;" />
+            </td> </tr> <tr> <td>
+            <label for="Comments">Comments*:</label>
+            </td> <td>
+            <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;background-color: white;"></textarea>
+            </td> </tr> <tr> <td>
+            * - required fields
+            </td> <td>
+            <input name="skip_Submit" type="submit" value="Submit" style="background-color: white;" />
+            </td> </tr>
+            </table>
+        </form>
+    </div>
+</main>
 
 <footer id="footer">
     &copy; 2023 by Mike Daoust
